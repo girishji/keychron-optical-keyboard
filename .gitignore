@@ -1,6 +1,13 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
+gerbers/
+Gerbers/
+gerber/
+Gerber/
+
+.DS_Store
+
 # Temporary files
 *.000
 *.bak
