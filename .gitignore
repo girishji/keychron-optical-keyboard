@@ -1,12 +1,9 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
-gerbers/
-Gerbers/
-gerber/
-Gerber/
-
 .DS_Store
+
+keychron-optical-keyboard-backups/
 
 # Temporary files
 *.000

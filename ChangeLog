@@ -1,42 +1,65 @@
 Author: Girish Palya <girishji@gmail.com>
-Date:   Wed, 03 Aug 2022 20:51:24 +0200
+Date:   Fri, 05 Aug 2022 18:52:30 +0200
 
-Add schematic for keyboard and footprints
+Add footprints
 
 
 M  .gitignore
-A  Footprints.pretty/BlackPill_STLINK2.kicad_mod
-A  Footprints.pretty/IR12-21C_TR8.kicad_mod
-A  Footprints.pretty/Keychron_LP_Optical.kicad_mod
-A  Footprints.pretty/Keychron_Optical_Switch_1.25u.kicad_mod
-A  Footprints.pretty/Keychron_Optical_Switch_1.5u.kicad_mod
-A  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
-A  Footprints.pretty/Keychron_Optical_Switch_1u.kicad_mod
-A  Footprints.pretty/Keychron_Optical_Switch_2u.kicad_mod
-A  Footprints.pretty/MountingHole_1.2mm_M1.kicad_mod
-A  Footprints.pretty/MountingHole_2.2mm_M2.kicad_mod
-A  Footprints.pretty/MountingHole_2.2mm_M2_jlcpcb.kicad_mod
-A  Footprints.pretty/PT12-21B_TR8.kicad_mod
-A  Footprints.pretty/Switch_Cutout.kicad_mod
-A  Footprints.pretty/Switch_Cutout_1.25u.kicad_mod
-A  Footprints.pretty/Switch_Cutout_1.5u.kicad_mod
-A  Footprints.pretty/Switch_Cutout_1.75u.kicad_mod
-A  Footprints.pretty/TestPoint_Plated_Hole_D1.2mm.kicad_mod
-A  Footprints.pretty/TestPoint_THTPad_1.0x1.5mm_Drill0.5mm.kicad_mod
-A  Footprints.pretty/TestPoint_THTPad_1.0x2.5mm_Drill0.5mm.kicad_mod
-A  MySymbols.kicad_sym
-A  fp-lib-table
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_201538.zip
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_202112.zip
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203051.zip
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203709.zip
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204429.zip
-A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204938.zip
-A  keychron-optical-keyboard.kicad_pcb
-A  keychron-optical-keyboard.kicad_prl
-A  keychron-optical-keyboard.kicad_pro
-A  keychron-optical-keyboard.kicad_sch
-A  sym-lib-table
+A  Footprints.pretty/BlackPill_STLINK.kicad_mod
+M  Footprints.pretty/BlackPill_STLINK2.kicad_mod
+M  Footprints.pretty/Keychron_Optical_Switch_1.25u.kicad_mod
+M  Footprints.pretty/Keychron_Optical_Switch_1.5u.kicad_mod
+M  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
+M  Footprints.pretty/Keychron_Optical_Switch_1u.kicad_mod
+M  Footprints.pretty/Keychron_Optical_Switch_2u.kicad_mod
+M  MySymbols.kicad_sym
+D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_201538.zip
+D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_202112.zip
+M  keychron-optical-keyboard.kicad_pcb
+M  keychron-optical-keyboard.kicad_prl
+M  keychron-optical-keyboard.kicad_sch
+A  placek.py
+A  resources/keychronpic.png
+
+commit 053e34c724c3d72f983544fc9fe4604fbe3ac49a
+Author: Girish Palya <girishji@gmail.com>
+Date:   Wed Aug 3 20:51:24 2022 +0200
+
+    Add schematic for keyboard and footprints
+    
+    M  .gitignore
+    A  Footprints.pretty/BlackPill_STLINK2.kicad_mod
+    A  Footprints.pretty/IR12-21C_TR8.kicad_mod
+    A  Footprints.pretty/Keychron_LP_Optical.kicad_mod
+    A  Footprints.pretty/Keychron_Optical_Switch_1.25u.kicad_mod
+    A  Footprints.pretty/Keychron_Optical_Switch_1.5u.kicad_mod
+    A  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
+    A  Footprints.pretty/Keychron_Optical_Switch_1u.kicad_mod
+    A  Footprints.pretty/Keychron_Optical_Switch_2u.kicad_mod
+    A  Footprints.pretty/MountingHole_1.2mm_M1.kicad_mod
+    A  Footprints.pretty/MountingHole_2.2mm_M2.kicad_mod
+    A  Footprints.pretty/MountingHole_2.2mm_M2_jlcpcb.kicad_mod
+    A  Footprints.pretty/PT12-21B_TR8.kicad_mod
+    A  Footprints.pretty/Switch_Cutout.kicad_mod
+    A  Footprints.pretty/Switch_Cutout_1.25u.kicad_mod
+    A  Footprints.pretty/Switch_Cutout_1.5u.kicad_mod
+    A  Footprints.pretty/Switch_Cutout_1.75u.kicad_mod
+    A  Footprints.pretty/TestPoint_Plated_Hole_D1.2mm.kicad_mod
+    A  Footprints.pretty/TestPoint_THTPad_1.0x1.5mm_Drill0.5mm.kicad_mod
+    A  Footprints.pretty/TestPoint_THTPad_1.0x2.5mm_Drill0.5mm.kicad_mod
+    A  MySymbols.kicad_sym
+    A  fp-lib-table
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_201538.zip
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_202112.zip
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203051.zip
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203709.zip
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204429.zip
+    A  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204938.zip
+    A  keychron-optical-keyboard.kicad_pcb
+    A  keychron-optical-keyboard.kicad_prl
+    A  keychron-optical-keyboard.kicad_pro
+    A  keychron-optical-keyboard.kicad_sch
+    A  sym-lib-table
 
 commit 42405a7bdf034f5fd91755b9195574da25832667
 Author: girishp <girishji@gmail.com>
