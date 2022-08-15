@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "MySym")(type "KiCad")(uri "/Users/gp/Projects/KiCad/keychron-optical-keyboard/MySymbols.kicad_sym")(options "")(descr ""))
+)
