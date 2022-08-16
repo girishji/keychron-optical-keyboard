@@ -1,14 +1,38 @@
 Author: Girish Palya <girishji@gmail.com>
-Date:   Tue, 16 Aug 2022 13:28:32 +0200
+Date:   Tue, 16 Aug 2022 19:32:49 +0200
 
-Add border to switch plate
+Add wrist support plate and remove 2 keys
 
 
-A  Footprints.pretty/MountingHole_1.7mm_M1.6_Pad.kicad_mod
-M  Footprints.pretty/MountingHole_2.2mm_M2_ISO7380_Pad.kicad_mod
+
+A  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
+A  drawborderk.py
+M  keychron-optical-keyboard.kicad_pcb
+M  keychron-optical-keyboard.kicad_prl
+M  keychron-optical-keyboard.kicad_pro
+M  keychron-optical-keyboard.kicad_sch
 M  placek.py
 M  switch-plate/switch-plate.kicad_pcb
 M  switch-plate/switch-plate.kicad_sch
+A  wrist-support/.gitignore
+A  wrist-support/fp-lib-table
+A  wrist-support/sym-lib-table
+A  wrist-support/wrist-support.kicad_pcb
+A  wrist-support/wrist-support.kicad_prl
+A  wrist-support/wrist-support.kicad_pro
+A  wrist-support/wrist-support.kicad_sch
+
+commit 10f692b356e7d2035ede88850695ee8b8aafe2f8
+Author: Girish Palya <girishji@gmail.com>
+Date:   Tue Aug 16 13:28:32 2022 +0200
+
+    Add border to switch plate
+    
+    A  Footprints.pretty/MountingHole_1.7mm_M1.6_Pad.kicad_mod
+    M  Footprints.pretty/MountingHole_2.2mm_M2_ISO7380_Pad.kicad_mod
+    M  placek.py
+    M  switch-plate/switch-plate.kicad_pcb
+    M  switch-plate/switch-plate.kicad_sch
 
 commit b7ebd4f2d9c47d9fbfea099325da050df4dbd7bb
 Author: Girish Palya <girishji@gmail.com>

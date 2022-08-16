@@ -92,7 +92,6 @@ class Keyboard(object):
     def place_footprints(self):
         dim = Keyboard.DIM
         board = pcbnew.GetBoard()
-        rp_pos = (-8.3, -7.4)
 
         # row 1
         for i in range(1, 16):
@@ -118,7 +117,7 @@ class Keyboard(object):
 
         # row 4
         offs = dim * (0.5 + 0.75 / 2)
-        self.switches[45].place((offs + dim / 4, 3 * dim))
+        self.switches[45].place((offs + dim / 8, 3 * dim))
         offs += dim + dim * 0.75 / 2
         for i in range(46, 57):
             self.switches[i].place((offs + (i - 46) * dim, 3 * dim))
@@ -126,39 +125,47 @@ class Keyboard(object):
         self.switches[57].place((offs + dim / 8, 3 * dim))
         offs += dim * 1.25
         self.switches[58].place((offs, 3 * dim))
-        self.switches[59].place((offs + dim, 3 * dim))
-        for i in range(1, 16):
-            self.switches[i + 44].place_fp(self.RP[i], rp_pos, 90)
+        # self.switches[59].place((offs + dim, 3 * dim))
+
+        if self.RP[1]:
+            rp_pos = (-8.3, -7.4)
+            for i in range(1, 15):
+                pos = rp_pos if i not in [4, 8, 12] else (-8.3, -4.3)
+                self.switches[i + 44].place_fp(self.RP[i], pos, 90)
+            self.switches[58].place_fp(self.RP[15], rp_pos, 90)
+            rp15 = self.RP[15].GetPosition()
+            self.RP[15].SetPosition(wxPoint(rp15.x + dim * 1e6, rp15.y))
 
         # row 5
-        for i in range(60, 63):
-            self.switches[i].place((dim / 2 + (i - 60) * dim + dim / 4, 4 * dim))
+        # for i in range(60, 63):
+        for i in range(59, 62):
+            self.switches[i].place((dim / 2 + (i - 59) * dim + dim / 4, 4 * dim))
         offs = dim / 2 + dim * 3
-        self.switches[63].place((offs + dim / 4, 4 * dim))
+        self.switches[62].place((offs + dim / 4, 4 * dim))
 
         # self.switches[64].place((offs + dim * 1.25 + dim / 8, 4 * dim))
-        self.switches[64].place((offs + dim * 1.25 + dim / 8 + 1.4, 4 * dim + 5))
-        self.switches[64].rotate(-16)
+        self.switches[63].place((offs + dim * 1.25 + dim / 8 + 1.4, 4 * dim + 5))
+        self.switches[63].rotate(-16)
         offs += dim * 1.25 * 2
         # self.switches[65].place((offs - 1.5, 4.5 * dim + 4))
-        self.switches[65].place((offs - 1.0, 4.5 * dim + 7))
+        self.switches[64].place((offs - 1.0, 4.5 * dim + 7))
         # self.switches[66].rotate(-15 + 90)
-        self.switches[65].rotate(-20 + 90)
+        self.switches[64].rotate(-20 + 90)
 
         offs += dim * 1.25
-        self.switches[66].place((offs, 4 * dim))
+        self.switches[65].place((offs, 4 * dim))
 
         # self.switches[67].place((offs + dim + dim / 4 + 1.5, 4.5 * dim + 4))
-        self.switches[67].place((offs + dim + dim / 4 + 1.0, 4.5 * dim + 7))
-        self.switches[67].rotate(20 + 90)
+        self.switches[66].place((offs + dim + dim / 4 + 1.0, 4.5 * dim + 7))
+        self.switches[66].rotate(20 + 90)
         offs += dim * 1.25
         # self.switches[68].place((offs + dim, 4 * dim))
-        self.switches[68].place((offs + dim - 1.4, 4 * dim + 5))
-        self.switches[68].rotate(16)
+        self.switches[67].place((offs + dim - 1.4, 4 * dim + 5))
+        self.switches[67].rotate(16)
         offs += dim
 
-        for i in range(69, 75):
-            self.switches[i].place((offs + (i - 68) * dim, 4 * dim))
+        for i in range(68, 73):
+            self.switches[i].place((offs + (i - 67) * dim, 4 * dim))
 
         bp = board.FindFootprintByReference("U1")
         if bp:
@@ -282,6 +289,39 @@ class Keyboard(object):
         pcbnew.Refresh()
 
 
+def add_holes():
+    dim = Keyboard.DIM
+    delta = 0.6
+    border = 0
+    board = pcbnew.GetBoard()
+    holes = [board.FindFootprintByReference("H1")]  # dummy
+    holes += [board.FindFootprintByReference("H" + str(num)) for num in range(1, 21)]
+
+    def set_position(num, x, y):
+        holes[num].SetPosition(pcbnew.wxPointMM(x, y))
+
+    set_position(1, dim * 0.5, -dim * 0.5 - border)
+    set_position(2, dim * 5.5, -dim * 0.5 - border)
+    set_position(3, dim * 10.5, -dim * 0.5 - border)
+    set_position(4, dim * 15.5, -dim * 0.5 - border)
+    set_position(5, dim * 3, dim * 0.5 + delta)
+    set_position(6, dim * 8, dim * 0.5 + delta)
+    set_position(7, dim * 13, dim * 0.5 + delta)
+    set_position(8, dim * 0.5, dim * 1.25 + delta)
+    set_position(9, dim * 3.75, dim * 2.5 + delta)
+    set_position(10, dim * 7.75, dim * 2.5 + delta)
+    set_position(11, dim * 11.75, dim * 2.5 + delta)
+    set_position(12, dim * 16.0 - dim / 2, dim * 2.5 + delta)
+    # set_position(13, -dim * 0.3, dim * 4.5 + border)
+    set_position(13, dim * 1.25, dim * 4.5 + border)
+    set_position(14, dim * 3.25, dim * 4.5 + border)
+    set_position(15, dim * 7.25, dim * 4.5 + border + 1)
+    set_position(16, dim * 12.0, dim * 4.5 + border)
+    set_position(17, dim * 16.0 - dim / 2, dim * 4.5 + border)
+
+    pcbnew.Refresh()
+
+
 def add_track(start, end, layer=pcbnew.F_Cu):
     board = pcbnew.GetBoard()
     track = pcbnew.PCB_TRACK(board)
@@ -334,3 +374,4 @@ kb = Keyboard()
 kb.place_footprints()
 # kb.remove_tracks()
 # kb.add_tracks()
+add_holes()

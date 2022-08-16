@@ -94,7 +94,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 133.35 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0ce1d7e4-4b92-4ffd-b41c-5dc024c8f50f)
-    (property "Reference" "S71" (id 0) (at 135.3312 75.3653 0)
+    (property "Reference" "S70" (id 0) (at 135.3312 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 135.3312 77.9022 0)
@@ -145,7 +145,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 64.77 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0f47508f-9529-4042-be16-cbcda67a8e3a)
-    (property "Reference" "S62" (id 0) (at 66.7512 75.3653 0)
+    (property "Reference" "S61" (id 0) (at 66.7512 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 66.7512 77.9022 0)
@@ -213,7 +213,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 57.15 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 225bb43e-606f-438b-94dd-a50ce1d7d588)
-    (property "Reference" "S61" (id 0) (at 59.1312 75.3653 0)
+    (property "Reference" "S60" (id 0) (at 59.1312 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 59.1312 77.9022 0)
@@ -291,23 +291,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 67.31 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
-  (symbol (lib_id "MySym:SwitchCutout") (at 156.21 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 36cfd324-438d-4d41-be23-0359257e67b8)
-    (property "Reference" "S74" (id 0) (at 158.1912 75.3653 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SwitchCutout" (id 1) (at 158.1912 77.9022 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MyFootprints:Switch_Cutout" (id 2) (at 156.21 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 156.21 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -400,7 +383,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 87.63 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 42e59d30-94b1-494c-b122-12d85ddc3ec5)
-    (property "Reference" "S65" (id 0) (at 89.6112 75.3653 0)
+    (property "Reference" "S64" (id 0) (at 89.6112 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 89.6112 77.9022 0)
@@ -434,7 +417,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 140.97 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 46e09b4d-d91a-4c42-a6ca-5e620516cf71)
-    (property "Reference" "S72" (id 0) (at 142.9512 75.3653 0)
+    (property "Reference" "S71" (id 0) (at 142.9512 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 142.9512 77.9022 0)
@@ -655,7 +638,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 80.01 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 69078fbe-d33c-46a2-8ca4-c2e700b7da95)
-    (property "Reference" "S64" (id 0) (at 81.9912 75.3653 0)
+    (property "Reference" "S63" (id 0) (at 81.9912 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 81.9912 77.9022 0)
@@ -665,23 +648,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 80.01 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
-  (symbol (lib_id "MySym:SwitchCutout") (at 156.21 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 69740096-6fd1-4533-82e3-8d507a94b0a5)
-    (property "Reference" "S59" (id 0) (at 158.1912 67.7453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SwitchCutout" (id 1) (at 158.1912 70.2822 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MyFootprints:Switch_Cutout" (id 2) (at 156.21 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 156.21 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -706,7 +672,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 118.11 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6c9666e5-d4b9-427c-bdf1-7ac4d2700f1c)
-    (property "Reference" "S69" (id 0) (at 120.0912 75.3653 0)
+    (property "Reference" "S68" (id 0) (at 120.0912 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 120.0912 77.9022 0)
@@ -774,7 +740,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 110.49 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7c827d7d-d8fb-4735-96ba-6f67823a1df4)
-    (property "Reference" "S68" (id 0) (at 112.4712 75.3653 0)
+    (property "Reference" "S67" (id 0) (at 112.4712 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 112.4712 77.9022 0)
@@ -876,7 +842,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 72.39 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8ca17128-6a67-43aa-966d-c5b8613f6418)
-    (property "Reference" "S63" (id 0) (at 74.3712 75.3653 0)
+    (property "Reference" "S62" (id 0) (at 74.3712 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 74.3712 77.9022 0)
@@ -1012,7 +978,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 95.25 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ab8034eb-5f85-4c17-a8e4-7675821c6936)
-    (property "Reference" "S66" (id 0) (at 97.2312 75.3653 0)
+    (property "Reference" "S65" (id 0) (at 97.2312 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 97.2312 77.9022 0)
@@ -1199,7 +1165,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 102.87 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c43f1eb4-5ca1-4855-afea-46c7c54b159f)
-    (property "Reference" "S67" (id 0) (at 104.8512 75.3653 0)
+    (property "Reference" "S66" (id 0) (at 104.8512 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 104.8512 77.9022 0)
@@ -1250,7 +1216,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 148.59 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c7f6ba1a-50de-4c28-b4f5-80fb11bec5ed)
-    (property "Reference" "S73" (id 0) (at 150.5712 75.3653 0)
+    (property "Reference" "S72" (id 0) (at 150.5712 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 150.5712 77.9022 0)
@@ -1471,7 +1437,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 125.73 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e6fec955-8f87-47ea-839c-572d8fe1475f)
-    (property "Reference" "S70" (id 0) (at 127.7112 75.3653 0)
+    (property "Reference" "S69" (id 0) (at 127.7112 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 127.7112 77.9022 0)
@@ -1573,7 +1539,7 @@
   (symbol (lib_id "MySym:SwitchCutout") (at 49.53 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f4eb0d3b-6319-4ca1-a028-0a3b793d8d21)
-    (property "Reference" "S60" (id 0) (at 51.5112 75.3653 0)
+    (property "Reference" "S59" (id 0) (at 51.5112 75.3653 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SwitchCutout" (id 1) (at 51.5112 77.9022 0)
@@ -1834,53 +1800,47 @@
     (path "/e67fe12e-0f55-47e6-a805-2aafd60d1ccf"
       (reference "S58") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/69740096-6fd1-4533-82e3-8d507a94b0a5"
+    (path "/f4eb0d3b-6319-4ca1-a028-0a3b793d8d21"
       (reference "S59") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/f4eb0d3b-6319-4ca1-a028-0a3b793d8d21"
+    (path "/225bb43e-606f-438b-94dd-a50ce1d7d588"
       (reference "S60") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/225bb43e-606f-438b-94dd-a50ce1d7d588"
+    (path "/0f47508f-9529-4042-be16-cbcda67a8e3a"
       (reference "S61") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/0f47508f-9529-4042-be16-cbcda67a8e3a"
+    (path "/8ca17128-6a67-43aa-966d-c5b8613f6418"
       (reference "S62") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/8ca17128-6a67-43aa-966d-c5b8613f6418"
+    (path "/69078fbe-d33c-46a2-8ca4-c2e700b7da95"
       (reference "S63") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/69078fbe-d33c-46a2-8ca4-c2e700b7da95"
+    (path "/42e59d30-94b1-494c-b122-12d85ddc3ec5"
       (reference "S64") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/42e59d30-94b1-494c-b122-12d85ddc3ec5"
+    (path "/ab8034eb-5f85-4c17-a8e4-7675821c6936"
       (reference "S65") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/ab8034eb-5f85-4c17-a8e4-7675821c6936"
+    (path "/c43f1eb4-5ca1-4855-afea-46c7c54b159f"
       (reference "S66") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/c43f1eb4-5ca1-4855-afea-46c7c54b159f"
+    (path "/7c827d7d-d8fb-4735-96ba-6f67823a1df4"
       (reference "S67") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/7c827d7d-d8fb-4735-96ba-6f67823a1df4"
+    (path "/6c9666e5-d4b9-427c-bdf1-7ac4d2700f1c"
       (reference "S68") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/6c9666e5-d4b9-427c-bdf1-7ac4d2700f1c"
+    (path "/e6fec955-8f87-47ea-839c-572d8fe1475f"
       (reference "S69") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/e6fec955-8f87-47ea-839c-572d8fe1475f"
+    (path "/0ce1d7e4-4b92-4ffd-b41c-5dc024c8f50f"
       (reference "S70") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/0ce1d7e4-4b92-4ffd-b41c-5dc024c8f50f"
+    (path "/46e09b4d-d91a-4c42-a6ca-5e620516cf71"
       (reference "S71") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
-    (path "/46e09b4d-d91a-4c42-a6ca-5e620516cf71"
-      (reference "S72") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
-    )
     (path "/c7f6ba1a-50de-4c28-b4f5-80fb11bec5ed"
-      (reference "S73") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
-    )
-    (path "/36cfd324-438d-4d41-be23-0359257e67b8"
-      (reference "S74") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
+      (reference "S72") (unit 1) (value "SwitchCutout") (footprint "MyFootprints:Switch_Cutout")
     )
   )
 )
