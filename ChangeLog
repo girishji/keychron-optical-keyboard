@@ -1,41 +1,54 @@
 Author: Girish Palya <girishji@gmail.com>
-Date:   Tue, 16 Aug 2022 00:02:08 +0200
+Date:   Tue, 16 Aug 2022 13:28:32 +0200
 
-Route tracks, add switch plate, scripts
+Add border to switch plate
 
-Add python scripts to route tracks, draw border, place footprints
 
-A  Footprints.pretty/BlackPill_STLINK_Down.kicad_mod
-A  Footprints.pretty/Border_PCB_WR.kicad_mod
-M  Footprints.pretty/Keychron_Optical_Switch_1.25u.kicad_mod
-M  Footprints.pretty/Keychron_Optical_Switch_1.5u.kicad_mod
-D  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
-M  Footprints.pretty/Keychron_Optical_Switch_1u.kicad_mod
-D  Footprints.pretty/Keychron_Optical_Switch_2u.kicad_mod
-A  Footprints.pretty/MountingHole_2.2mm_M2_ISO7380_Pad.kicad_mod
-A  Footprints.pretty/SMTSO_M1.6.kicad_mod
-A  Footprints.pretty/SMTSO_M2.kicad_mod
-M  Footprints.pretty/Switch_Cutout.kicad_mod
-M  MySymbols.kicad_sym
-D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203051.zip
-D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203709.zip
-D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204429.zip
-D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204938.zip
-M  keychron-optical-keyboard.kicad_pcb
-M  keychron-optical-keyboard.kicad_prl
-M  keychron-optical-keyboard.kicad_sch
+A  Footprints.pretty/MountingHole_1.7mm_M1.6_Pad.kicad_mod
+M  Footprints.pretty/MountingHole_2.2mm_M2_ISO7380_Pad.kicad_mod
 M  placek.py
-A  resources/AL-S0602IRC-VI-12P9.pdf
-A  resources/AL-S0602PTB-VI-1216.pdf
-A  resources/IMG_0621.JPG
-M  resources/keychronpic.png
-A  switch-plate/.gitignore
-A  switch-plate/fp-lib-table
-A  switch-plate/switch-plate.kicad_pcb
-A  switch-plate/switch-plate.kicad_prl
-A  switch-plate/switch-plate.kicad_pro
-A  switch-plate/switch-plate.kicad_sch
-A  switch-plate/sym-lib-table
+M  switch-plate/switch-plate.kicad_pcb
+M  switch-plate/switch-plate.kicad_sch
+
+commit b7ebd4f2d9c47d9fbfea099325da050df4dbd7bb
+Author: Girish Palya <girishji@gmail.com>
+Date:   Tue Aug 16 00:02:08 2022 +0200
+
+    Route tracks, add switch plate, scripts
+    
+    Add python scripts to route tracks, draw border, place footprints
+    
+    A  Footprints.pretty/BlackPill_STLINK_Down.kicad_mod
+    A  Footprints.pretty/Border_PCB_WR.kicad_mod
+    M  Footprints.pretty/Keychron_Optical_Switch_1.25u.kicad_mod
+    M  Footprints.pretty/Keychron_Optical_Switch_1.5u.kicad_mod
+    D  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
+    M  Footprints.pretty/Keychron_Optical_Switch_1u.kicad_mod
+    D  Footprints.pretty/Keychron_Optical_Switch_2u.kicad_mod
+    A  Footprints.pretty/MountingHole_2.2mm_M2_ISO7380_Pad.kicad_mod
+    A  Footprints.pretty/SMTSO_M1.6.kicad_mod
+    A  Footprints.pretty/SMTSO_M2.kicad_mod
+    M  Footprints.pretty/Switch_Cutout.kicad_mod
+    M  MySymbols.kicad_sym
+    D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203051.zip
+    D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_203709.zip
+    D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204429.zip
+    D  keychron-optical-keyboard-backups/keychron-optical-keyboard-2022-08-03_204938.zip
+    M  keychron-optical-keyboard.kicad_pcb
+    M  keychron-optical-keyboard.kicad_prl
+    M  keychron-optical-keyboard.kicad_sch
+    M  placek.py
+    A  resources/AL-S0602IRC-VI-12P9.pdf
+    A  resources/AL-S0602PTB-VI-1216.pdf
+    A  resources/IMG_0621.JPG
+    M  resources/keychronpic.png
+    A  switch-plate/.gitignore
+    A  switch-plate/fp-lib-table
+    A  switch-plate/switch-plate.kicad_pcb
+    A  switch-plate/switch-plate.kicad_prl
+    A  switch-plate/switch-plate.kicad_pro
+    A  switch-plate/switch-plate.kicad_sch
+    A  switch-plate/sym-lib-table
 
 commit 89958ccb360c98a6d90997c65c744a805ee67d01
 Author: Girish Palya <girishji@gmail.com>

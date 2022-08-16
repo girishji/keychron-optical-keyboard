@@ -332,5 +332,5 @@ def transform(pt, around, theta):
 
 kb = Keyboard()
 kb.place_footprints()
-kb.remove_tracks()
-kb.add_tracks()
+# kb.remove_tracks()
+# kb.add_tracks()
