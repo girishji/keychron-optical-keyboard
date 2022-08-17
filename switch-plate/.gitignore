@@ -2,7 +2,7 @@
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 .DS_Store
-
+.DS_Store
 switch-plate-backups/
 
 # Temporary files

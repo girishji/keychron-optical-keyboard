@@ -1,26 +1,81 @@
 Author: Girish Palya <girishji@gmail.com>
-Date:   Tue, 16 Aug 2022 19:32:49 +0200
+Date:   Wed, 17 Aug 2022 21:10:41 +0200
 
-Add wrist support plate and remove 2 keys
+Add gerbers and assembly file
 
 
 
-A  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
-A  drawborderk.py
+M  .gitignore
+M  README.md
+A  jlcpcb/gerber.zip
+A  jlcpcb/gerber/keychron-optical-keyboard-B_Cu.gbl
+A  jlcpcb/gerber/keychron-optical-keyboard-B_Mask.gbs
+A  jlcpcb/gerber/keychron-optical-keyboard-B_Paste.gbp
+A  jlcpcb/gerber/keychron-optical-keyboard-B_Silkscreen.gbo
+A  jlcpcb/gerber/keychron-optical-keyboard-Edge_Cuts.gm1
+A  jlcpcb/gerber/keychron-optical-keyboard-F_Cu.gtl
+A  jlcpcb/gerber/keychron-optical-keyboard-F_Mask.gts
+A  jlcpcb/gerber/keychron-optical-keyboard-F_Paste.gtp
+A  jlcpcb/gerber/keychron-optical-keyboard-F_Silkscreen.gto
+A  jlcpcb/gerber/keychron-optical-keyboard-NPTH-drl_map.gbr
+A  jlcpcb/gerber/keychron-optical-keyboard-NPTH.drl
+A  jlcpcb/gerber/keychron-optical-keyboard-PTH-drl_map.gbr
+A  jlcpcb/gerber/keychron-optical-keyboard-PTH.drl
 M  keychron-optical-keyboard.kicad_pcb
-M  keychron-optical-keyboard.kicad_prl
-M  keychron-optical-keyboard.kicad_pro
-M  keychron-optical-keyboard.kicad_sch
-M  placek.py
+M  switch-plate/.gitignore
+A  switch-plate/jlcpcb/gerber.zip
+A  switch-plate/jlcpcb/gerber/switch-plate-B_Cu.gbl
+A  switch-plate/jlcpcb/gerber/switch-plate-B_Mask.gbs
+A  switch-plate/jlcpcb/gerber/switch-plate-B_Paste.gbp
+A  switch-plate/jlcpcb/gerber/switch-plate-B_Silkscreen.gbo
+A  switch-plate/jlcpcb/gerber/switch-plate-Edge_Cuts.gm1
+A  switch-plate/jlcpcb/gerber/switch-plate-F_Cu.gtl
+A  switch-plate/jlcpcb/gerber/switch-plate-F_Mask.gts
+A  switch-plate/jlcpcb/gerber/switch-plate-F_Paste.gtp
+A  switch-plate/jlcpcb/gerber/switch-plate-F_Silkscreen.gto
+A  switch-plate/jlcpcb/gerber/switch-plate-NPTH-drl_map.gbr
+A  switch-plate/jlcpcb/gerber/switch-plate-NPTH.drl
+A  switch-plate/jlcpcb/gerber/switch-plate-PTH-drl_map.gbr
+A  switch-plate/jlcpcb/gerber/switch-plate-PTH.drl
 M  switch-plate/switch-plate.kicad_pcb
-M  switch-plate/switch-plate.kicad_sch
-A  wrist-support/.gitignore
-A  wrist-support/fp-lib-table
-A  wrist-support/sym-lib-table
-A  wrist-support/wrist-support.kicad_pcb
-A  wrist-support/wrist-support.kicad_prl
-A  wrist-support/wrist-support.kicad_pro
-A  wrist-support/wrist-support.kicad_sch
+M  wrist-support/.gitignore
+A  wrist-support/jlcpcb/gerber/wrist-support-B_Cu.gbl
+A  wrist-support/jlcpcb/gerber/wrist-support-B_Mask.gbs
+A  wrist-support/jlcpcb/gerber/wrist-support-B_Paste.gbp
+A  wrist-support/jlcpcb/gerber/wrist-support-B_Silkscreen.gbo
+A  wrist-support/jlcpcb/gerber/wrist-support-Edge_Cuts.gm1
+A  wrist-support/jlcpcb/gerber/wrist-support-F_Cu.gtl
+A  wrist-support/jlcpcb/gerber/wrist-support-F_Mask.gts
+A  wrist-support/jlcpcb/gerber/wrist-support-F_Paste.gtp
+A  wrist-support/jlcpcb/gerber/wrist-support-F_Silkscreen.gto
+A  wrist-support/jlcpcb/gerber/wrist-support-NPTH-drl_map.gbr
+A  wrist-support/jlcpcb/gerber/wrist-support-NPTH.drl
+A  wrist-support/jlcpcb/gerber/wrist-support-PTH-drl_map.gbr
+A  wrist-support/jlcpcb/gerber/wrist-support-PTH.drl
+M  wrist-support/wrist-support.kicad_pcb
+
+commit 46288435690cd00cf215786253914486b80405f6
+Author: Girish Palya <girishji@gmail.com>
+Date:   Tue Aug 16 19:32:49 2022 +0200
+
+    Add wrist support plate and remove 2 keys
+    
+    A  Footprints.pretty/Keychron_Optical_Switch_1.75u.kicad_mod
+    A  drawborderk.py
+    M  keychron-optical-keyboard.kicad_pcb
+    M  keychron-optical-keyboard.kicad_prl
+    M  keychron-optical-keyboard.kicad_pro
+    M  keychron-optical-keyboard.kicad_sch
+    M  placek.py
+    M  switch-plate/switch-plate.kicad_pcb
+    M  switch-plate/switch-plate.kicad_sch
+    A  wrist-support/.gitignore
+    A  wrist-support/fp-lib-table
+    A  wrist-support/sym-lib-table
+    A  wrist-support/wrist-support.kicad_pcb
+    A  wrist-support/wrist-support.kicad_prl
+    A  wrist-support/wrist-support.kicad_pro
+    A  wrist-support/wrist-support.kicad_sch
 
 commit 10f692b356e7d2035ede88850695ee8b8aafe2f8
 Author: Girish Palya <girishji@gmail.com>
